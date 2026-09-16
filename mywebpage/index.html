@@ -1,6 +1,6 @@
 <!doctype html>
 
-<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+<!-- col-md-6 -->
 
 <html>
 
@@ -13,7 +13,21 @@
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<meta name="description" content="Личная страница и контакты">
-
+        <style>
+			.frame {
+              position: relative;
+              padding: 30px;
+            }
+            .frame::before,
+            .frame::after {
+              content: "";
+              position: absolute;
+              width: 40px; height: 40px;
+              border: 3px solid #e74c3c;
+            }
+            .frame::before { top: 0; left: 0; border-right: none; border-bottom: none; }
+            .frame::after  { bottom: 0; right: 0; border-left: none; border-top: none; }
+		</style>
 		<!-- Bootstrap Core CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
@@ -86,7 +100,7 @@
 					</article>
 				</div>
 
-				<div class="col-md-6">
+				<div class="framed">
 					<article>
 						<h3>Тут можно написать</h3>
 						<p>Еще много много много много много много <br>
