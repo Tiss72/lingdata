@@ -14,19 +14,14 @@
 
 		<meta name="description" content="Личная страница и контакты">
         <style>
-			.frame {
-              position: relative;
-              padding: 30px;
-            }
-            .frame::before,
-            .frame::after {
-              content: "";
-              position: absolute;
-              width: 40px; height: 40px;
-              border: 3px solid #e74c3c;
-            }
-            .frame::before { top: 0; left: 0; border-right: none; border-bottom: none; }
-            .frame::after  { bottom: 0; right: 0; border-left: none; border-top: none; }
+			header {
+				font family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+				color: #CD5C5C;
+			}
+			body {
+				font family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				color: DarkSlateGray;
+			}
 		</style>
 		<!-- Bootstrap Core CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -64,9 +59,9 @@
 					<div class="col-md-4">
 						<br><br>
 <!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; color: #BC8F8F;">Таня Турищева</h1>
+						<h1>Таня Турищева</h1>
 						<hr> <!-- это горизонтальная линия -->
-						<p>Человек, <i>умеющий создавать<b> HTML</b></i></p> 
+						<p style="color: white;">Человек, <i>умеющий создавать<b> HTML</b></i></p> 
 					</div>
 					<div class="col-md-4">
 <!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
@@ -100,7 +95,7 @@
 					</article>
 				</div>
 
-				<div class="col-md-6"; style="border: 1px solid #ccc; padding: 15px; border-radius: 10px;">
+				<div class="col-md-6";">
 					<article>
 						<h3>Тут можно написать</h3>
 						<p>Еще много много много много много много <br>
@@ -129,7 +124,7 @@
 <!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
 		<footer class="bs-docs-footer"> 
 			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2026</p> 
+				<p style="text-align:right; ">&copy; Т. Турищева, 2026</p> 
 			</div>
 		</footer>
 	</body>
